@@ -165,3 +165,14 @@ footer ul li i {
 #splash.fade {
   opacity: 0;
 }
+
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cards .item img {
+    width: 40px;
+    align-self: flex-end;
+  }
+}
