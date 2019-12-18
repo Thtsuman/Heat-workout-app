@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Heat</title>
+  </head>
+  <body>
+    <div id="splash">
+      <h4>HEAT</h4>
+    </div>
+    <div class="content">
+      <header class="app-header">
+        <div class="container">
+          <h3 class="logo">HEAT</h3>
+          <input type="text" placeholder="Search..." />
+        </div>
+      </header>
+      <div class="subheader">
+        <div class="text">
+          <h4>Best Workout for You</h4>
+          <p>more.</p>
+        </div>
+        <img src="img/dumbbell.svg" alt="dumbbell" />
+      </div>
+
+      <div class="cards container">
+        <div class="item">
+          <h4>Workouts</h4>
+          <p>List of Workouts details</p>
+          <img src="img/workout.svg" alt="workout" />
+        </div>
+        <div class="item">
+          <h4>Calender</h4>
+          <p>Set your workout dates</p>
+          <img src="img/calendar.svg" alt="calendar" />
+        </div>
+        <div class="item">
+          <h4>Goals</h4>
+          <p>Help me to keep motivated</p>
+          <img src="img/goal.svg" alt="goal" />
+        </div>
+        <div class="item">
+          <h4>Achievement</h4>
+          <p>Set some records</p>
+          <img src="img/achievement.svg" alt="achievement" />
+        </div>
+        <div class="item">
+          <h4>Trainer</h4>
+          <p>Consult with professional</p>
+          <img src="img/trainer.svg" alt="trainer" />
+        </div>
+        <div class="item">
+          <h4>Contact Us</h4>
+          <p>Any Question you wanna ask?</p>
+          <img src="img/consult.svg" alt="consult" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="nav-items">
+        <li>
+          <i class="fa fa-home"></i>
+          <p>Home</p>
+        </li>
+        <li>
+          <i class="fa fa-heart"></i>
+          <p>Liked</p>
+        </li>
+        <li>
+          <i class="fa fa-user"></i>
+          <p>Profile</p>
+        </li>
+      </ul>
+    </footer>
+  </body>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("splash").classList.toggle("fade");
+    }, 2000);
+  </script>
+</html>

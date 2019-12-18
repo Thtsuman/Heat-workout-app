@@ -1,0 +1,167 @@
+:root {
+  --primary-color: #191e38;
+  --secondary-color: #2f365f;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.app-header {
+  background-color: var(--primary-color);
+  color: #ddd;
+  padding: 10px;
+  box-shadow: 3px 3px 50px #333;
+  z-index: 500;
+}
+
+.app-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-header .container .logo {
+  margin-bottom: 7px;
+  font-size: 1.3rem;
+}
+
+.app-header input[type="text"] {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.subheader {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  color: #e7e7e7;
+  padding: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  z-index: 1;
+  border-radius: 0 0 5px 5px;
+}
+
+.subheader .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.subheader .text p {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.subheader img {
+  width: 30px;
+  filter: invert(90%);
+  -webkit-filter: invert(90%);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.cards .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 1px 1px 3px #555;
+}
+
+.cards .item img {
+  width: 30px;
+  align-self: flex-end;
+}
+
+.cards .item p {
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #c7c7c7;
+  color: #222;
+  flex-shrink: 0;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+footer ul li {
+  margin: 5px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li i {
+  padding-top: 5px;
+}
+
+/* splash */
+#splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: opacity 0.5s;
+}
+
+#splash h4 {
+  font-size: 2rem;
+  color: #c7c7c7;
+}
+
+#splash.fade {
+  opacity: 0;
+}
